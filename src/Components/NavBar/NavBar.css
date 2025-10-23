@@ -42,3 +42,6 @@
 .navbar-list li a:hover {
   color: #61dafb; /* Đổi màu khi di chuột (màu xanh React) */
 }
+.navbar-list li a.active {
+  color: #61dafb;
+}

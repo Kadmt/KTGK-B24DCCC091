@@ -1,0 +1,22 @@
+.postcard-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.postlist-btn {
+    padding: 15px 18px;
+    border: none;
+    border-radius: 9px;
+    margin: 20px;
+    background-color: #3885d1;
+    color: white;
+    font-size: 1.2rem;
+    transition: 300ms ease;
+}.postlist-btn:hover {
+    background-color: #2c6bb3;
+    cursor: pointer;
+    transform: scale(1.06);
+}

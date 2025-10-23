@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "./NavBar.css"
 export function Navbar() {
     
@@ -8,10 +8,10 @@ export function Navbar() {
             <h1>Blog Management</h1>
             <nav>
             <ul className='navbar-list'>
-                <li><Link to="/">TRang chủ</Link></li>
-                <li><Link to="/create">Tạo bài</Link></li>
-                <li><Link to="/post/:id">Chi tiết</Link></li>
-                <li><Link to="/posts/edit/:id">Sửa</Link></li>
+                <li><NavLink to="/">TRang chủ</NavLink></li>
+                <li><NavLink to="/create">Tạo bài</NavLink></li>
+                <li><NavLink to="/post/:id">Chi tiết</NavLink></li>
+                <li><NavLink to="/posts/edit/:id">Sửa</NavLink></li>
             </ul>
             </nav>
 
