@@ -1,0 +1,44 @@
+/* NavBar.css */
+
+/* -- Vùng chứa Navbar chính -- */
+.navbar {
+  display: flex; /* Sử dụng Flexbox để căn chỉnh nội dung */
+  justify-content: space-between; /* Đẩy tiêu đề sang trái và nav sang phải */
+  align-items: center; /* Căn giữa các mục theo chiều dọc */
+  background-color: #333; /* Màu nền tối */
+  color: white; /* Màu chữ mặc định */
+  padding: 1rem 2rem; /* 1rem trên/dưới, 2rem trái/phải */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ cho có chiều sâu */
+  width: 100%; /* Đảm bảo nó trải dài toàn bộ chiều rộng */
+  box-sizing: border-box; /* Giúp padding không ảnh hưởng đến tổng chiều rộng */
+}
+
+/* -- Tiêu đề (h1) -- */
+.navbar h1 {
+  margin: 0; /* Xóa lề mặc định */
+  font-size: 1.5rem; /* Kích thước phông chữ cho tiêu đề */
+}
+
+/* -- Danh sách liên kết (ul) -- */
+.navbar-list {
+  display: flex; /* Đặt các mục li (list items) nằm ngang */
+  list-style-type: none; /* Xóa dấu chấm đầu dòng (bullets) */
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* Tạo khoảng cách 1.5rem giữa mỗi mục li */
+}
+
+/* -- Các liên kết (a) -- */
+/* <Link> của React Router sẽ được render thành thẻ <a> */
+.navbar-list li a {
+  color: white; /* Màu chữ cho liên kết */
+  text-decoration: none; /* Xóa gạch chân mặc định */
+  font-weight: bold; /* Làm cho chữ đậm hơn */
+  padding: 0.5rem; /* Thêm vùng đệm để dễ nhấn hơn */
+  transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+}
+
+/* -- Hiệu ứng khi di chuột (hover) vào liên kết -- */
+.navbar-list li a:hover {
+  color: #61dafb; /* Đổi màu khi di chuột (màu xanh React) */
+}
